@@ -1,0 +1,20 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  usr: MyString
+  pwd: MyString
+  nombre: MyString
+  ap: MyString
+  am: MyString
+  gerente: 1
+  ganancia: 1.5
+
+two:
+  usr: MyString
+  pwd: MyString
+  nombre: MyString
+  ap: MyString
+  am: MyString
+  gerente: 1
+  ganancia: 1.5

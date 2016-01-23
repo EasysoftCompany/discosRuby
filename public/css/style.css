@@ -1,0 +1,128 @@
+body
+{
+    background-color: lightgray;
+    size: 18px;
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+}
+header
+{
+    background: rgb(169,3,41);
+    margin: 0;
+    display: inline-block;
+    color: white;
+    margin: 0px;
+    padding: 0 0 1em 0;
+    text-align: center;
+    font-size: 17px;
+    width: 100%;
+}
+
+a
+{
+  color: #FFFFFF;
+}
+
+a:hover
+{
+  color: #CCC;
+}
+
+#boton{
+  margin-left: 40%;
+  border: .2em solid;
+  border-color: black;
+  border-radius: .3em;
+  font-size:1em;
+  padding:.4em;
+  color: white;
+  width: 20%;
+  background-color: rgb(171, 22, 56)
+}
+#formularios{
+  margin-left: 40%;
+  border: .2em solid;
+  border-color: black;
+  border-radius: .3em;
+  font-size:1em;
+  padding:1em;
+  color: white;
+  width: 20%;
+  background-color: rgb(171, 22, 56)
+}
+
+#error{
+  margin-left: 35%;
+  border: .2em solid;
+  border-color: black;
+  border-radius: .3em;
+  font-size:1em;
+  padding:1em;
+  color: white;
+  width: 30%;
+  background-color: red;
+}
+
+
+
+#boton2{
+  margin-left: 40%;
+  border: .2em solid;
+  border-color: black;
+  border-radius: .3em;
+  font-size:1em;
+  padding:.4em;
+  color: white;
+  width: 20%;
+  background-color: rgb(161, 22, 56)
+}
+
+footer
+{
+    background: rgb(169,3,41);
+    color: #e5e2e2;
+    margin: 0;
+    padding: 1em 2em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+a img {
+	border: 0;
+}
+table.sortable {
+	border-spacing: 0;
+	border: 1px solid #000;
+	border-collapse: collapse;
+  width: 100%;
+}
+table.sortable th, table.sortable td {
+	text-align: left;
+	padding: 2px 4px 2px 4px;
+	width: 200px;
+	border-style: solid;
+	border-color: #444;
+}
+table.sortable th {
+	border-width: 0px 1px 1px 1px;
+	background-color: red;
+}
+table.sortable td {
+	border-width: 0px 1px 0px 1px;
+}
+table.sortable tr.odd td {
+	background-color: #222;
+  color: white;
+}
+table.sortable tr.even td {
+	background-color: #666;
+    color: white;
+}
+table.sortable tr.sortbottom td {
+	border-top: 1px solid #000;
+	background-color: #BBB;
+	font-weight: bold;
+}

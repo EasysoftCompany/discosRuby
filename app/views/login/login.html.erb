@@ -1,0 +1,67 @@
+<html>
+  <link rel="stylesheet" href="/css/style.css">
+<head> <title> Login </title></head>
+  <header> <h1>Login Vendedores</h1> </header>
+
+<body>
+<h2> Inicio de Sesion: </h2>
+<div id="formularios">
+<%= form_tag({:controller => "login", :action => "login"}, :method => "get") do %>
+
+   <%= label_tag "usr", "Usuario" %>
+   <%= text_field_tag "usr", "", :required => "required" %>
+   <br /><br>
+
+   <%= label_tag "pwd", "Contraseña" %>
+   <%= password_field_tag "pwd", "", :required => "required" %>
+   <br /><br>
+
+   <%= submit_tag "Enviar" %>
+
+   <br><br>
+<% end %>
+</div>
+
+<% if @error_login %>
+<br><br><br><br>
+ <div id='error'> El nombre de usuario o la contraseña son incorrectos. </div>
+<% end %>
+
+<!--
+<div id="resultados">
+   <% if @admin %>
+         <% if @admin[:value] == 1 && @admin[:flag]%>
+         <%= puts '*************************' %>
+         <%= puts @admin %>
+         <%= puts '*************************' %>
+            <footer><%= label_tag "info" , "Administrador"%></footer>
+            <script type="text/javascript">
+            alert("Bienvenido Administrador");
+              window.location.href="./gerente"
+            </script>
+
+            <% elsif @admin[:value] == 0 && @admin[:flag]%>
+              <%= puts '*************************' %>
+              <%= puts @admin %>
+              <%= puts '*************************' %>
+
+              <footer><%= label_tag "info" , "Vendedor"%></footer>
+                <script type="text/javascript">
+                  alert("Bienvenido Vendedor");
+                  window.location.href="./";
+                </script>
+
+                    <% else %>
+                    <%= puts '*************************' %>
+                    <%= puts @admin %>
+                    <%= puts '*************************' %>
+                        <footer>  <%= label_tag "info", "Esta combinaciòn de Usuario/Contraseña no Existe" %></footer>
+
+          <%end%>
+   <% end %>
+
+
+</div>
+-->
+</body>
+  </html>

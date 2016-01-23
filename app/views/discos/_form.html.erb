@@ -1,0 +1,54 @@
+
+<%= form_for(@disco) do |f| %>
+  <% if @disco.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@disco.errors.count, "error") %> prohibited this disco from being saved:</h2>
+
+      <ul>
+      <% @disco.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cantidad %><br>
+    <%= f.number_field :cantidad %>
+  </div>
+  <div class="field">
+    <%= f.label :titulo %><br>
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :genero %><br>
+    <%= f.text_field :genero %>
+  </div>
+  <div class="field">
+    <%= f.label :artista %><br>
+    <%= f.text_field :artista %>
+  </div>
+  <div class="field">
+    <%= f.label :anio %><br>
+    <%= f.number_field :anio %>
+  </div>
+  <div class="field">
+    <%= f.label :album %><br>
+    <%= f.text_field :album %>
+  </div>
+  <div class="field">
+    <%= f.label :NumCanciones %><br>
+    <%= f.number_field :NumCanciones %>
+  </div>
+  <div class="field">
+    <%= f.label :descuento %><br>
+    <%= f.number_field :descuento %>
+  </div>
+  <div class="field">
+    <%= f.label :costo %><br>
+    <%= f.text_field :costo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

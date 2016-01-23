@@ -1,0 +1,24 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cantidad: 1
+  titulo: MyString
+  genero: MyString
+  artista: MyString
+  anio: 1
+  album: MyString
+  NumCanciones: 1
+  descuento: 1
+  costo: 1.5
+
+two:
+  cantidad: 1
+  titulo: MyString
+  genero: MyString
+  artista: MyString
+  anio: 1
+  album: MyString
+  NumCanciones: 1
+  descuento: 1
+  costo: 1.5

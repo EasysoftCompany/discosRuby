@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script type="text/javascript" src="/css/sortable.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>.::Clientes::</title>
+  </head>
+
+  <header>
+    <h2> Menu Clientes </h2>
+  </header>
+
+  <body>
+      <h1>Lista de Discos</h1>
+
+      <table id="sortabletable" border = '1' class='sortable' >
+
+          <tr>
+            <th>Cantidad</th>
+            <th>Titulo</th>
+            <th>Genero</th>
+            <th>Artista</th>
+            <th>Anio</th>
+            <th>Album</th>
+            <th>Numcanciones</th>
+            <th>Descuento</th>
+            <th>Costo</th>
+
+          </tr>
+
+          <% @discos.each do |disco| %>
+            <tr>
+              <td><%= disco.cantidad %></td>
+              <td><%= disco.titulo %></td>
+              <td><%= disco.genero %></td>
+              <td><%= disco.artista %></td>
+              <td><%= disco.anio %></td>
+              <td><%= disco.album %></td>
+              <td><%= disco.NumCanciones %></td>
+              <td><%= disco.descuento %></td>
+              <td><%= disco.costo %></td>
+            </tr>
+          <% end %>
+
+      </table>
+  </body>
+    <footer> <a href='/'>Menu Principal</a> </footer>
+
+</html>

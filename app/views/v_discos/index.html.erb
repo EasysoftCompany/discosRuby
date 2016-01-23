@@ -1,0 +1,41 @@
+<html>
+
+  <head>
+      <script type="text/javascript" src="/css/sortable.js"></script>
+       <link rel="stylesheet" href="/css/style.css">
+      <title>.::Vender Discos::.</title>
+  </head>
+<header> <h2> Vender discos </h2> </header>
+
+<body>
+  <br><br>
+
+<form action="/ventafinish" method="get">
+
+<label>Nombre del Cliente </label>
+<select name="cliente">
+    <% @clientes.each do |u| %>
+      <option value= '<%= u.id_cliente %>' ><%=u.nombre%><%=u.ap%></option>
+    <% end %>
+  </select>
+
+  <br><br>
+
+  <label>Titulo del Disco: </label>
+
+  <select name="disco">
+      <% @discos.each do |u| %>
+        <option value= '<%= u.id_disco %>' ><%=u.titulo%></option>
+      <% end %>
+    </select>
+
+<br><br>
+    <input type="submit" value="Enviar"/>
+
+</form>
+
+
+
+
+  <footer> <a href='/ventas'>Regresar</a></footer>
+</html>

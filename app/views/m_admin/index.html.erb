@@ -1,0 +1,22 @@
+<html>
+  <head>
+       <link rel="stylesheet" href="/css/style.css">
+      <title>.::Administrador::.</title>
+  </head>
+<header> <h2> Menu Administradores </h2> </header>
+
+<body>
+  <h1>¡Bienvenido <%= session[:nombre] %>  <%= session[:ap] %>! </h1>
+  <h2>Ganancias $ <%= session[:ganancia] %> </h2>
+  <br><br><br><br>
+
+  <div id="boton"> <%= link_to 'Agregar Disco', new_disco_path %> </div>
+  <br><br>
+  <div id="boton2"> <%= link_to 'Registrar Nuevo Cliente', new_cliente_path %> </div>
+  <br><br>
+  <div id="boton2"> <%= link_to 'Resurtir discos', '/resurtir' %> </div>
+
+  </body>
+
+  <footer> <%= link_to 'Cerrar Sesion', '/logout' %> </footer>
+</html>

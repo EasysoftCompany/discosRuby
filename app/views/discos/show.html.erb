@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @disco.cantidad %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @disco.titulo %>
+</p>
+
+<p>
+  <strong>Genero:</strong>
+  <%= @disco.genero %>
+</p>
+
+<p>
+  <strong>Artista:</strong>
+  <%= @disco.artista %>
+</p>
+
+<p>
+  <strong>Anio:</strong>
+  <%= @disco.anio %>
+</p>
+
+<p>
+  <strong>Album:</strong>
+  <%= @disco.album %>
+</p>
+
+<p>
+  <strong>Numcanciones:</strong>
+  <%= @disco.NumCanciones %>
+</p>
+
+<p>
+  <strong>Descuento:</strong>
+  <%= @disco.descuento %>
+</p>
+
+<p>
+  <strong>Costo:</strong>
+  <%= @disco.costo %>
+</p>
+
+<%= link_to 'Edit', edit_disco_path(@disco) %> |
+<%= link_to 'Back', discos_path %>

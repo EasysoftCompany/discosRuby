@@ -1,0 +1,38 @@
+<!DOCTYPE>
+
+
+<html>
+
+  <head>
+      <script type="text/javascript" src="/css/sortable.js"></script>
+       <link rel="stylesheet" href="/css/style.css">
+      <title>.::Resurtir Discos::.</title>
+  </head>
+<header> <h2> Resurtir discos </h2> </header>
+
+<body>
+  <br><br>
+  <table id="discostable" border = '1' class='sortable'>
+
+      <tr>
+        <th>Cantidad</th>
+        <th>Titulo</th>
+        <th>Resurtir</th>
+      </tr>
+
+      <% @discos.each do |disco| %>
+		<% if disco.cantidad == 5 or disco.cantidad == 4 or disco.cantidad == 3 or disco.cantidad == 2 or disco.cantidad == 1 %>
+        		<tr>
+          		<td><%= disco.cantidad %></td>
+          		<td><%= disco.titulo %></td>
+          		<td><%= link_to 'Go', edit_disco_path(disco) %></td>
+        		</tr>
+		<% end %>
+      <% end %>
+
+  </table>
+
+
+
+  <footer> <a href='/gerente'>Regresar</a></footer>
+</html>

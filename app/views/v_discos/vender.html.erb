@@ -1,0 +1,33 @@
+﻿<% if @anydisco %>
+	
+<script type="text/javascript">
+alert("Venta CANCELADA, No hay mas discos!!");
+  window.location.href="./ventas"
+</script>
+<% else%>
+
+
+
+<% if @cantidadDiscos == 5 or @cantidadDiscos == 4 or @cantidadDiscos == 3 or @cantidadDiscos == 2 or @cantidadDiscos == 1 %>
+        	
+<script type="text/javascript">
+alert("Venta Concretada por $ <%= @costototal%>, se aplica un descuento de <%=@specialDesc%>% al cliente. ¡Felicidades! obtubiste una ganancia de $<%= @gan %>");
+
+alert("Atencion: Solo quedan <%= @cantidadDiscos %> discos, contacte al gerente"); 
+
+ window.location.href="./ventas"
+</script>
+
+
+
+<%else%>
+
+
+<script type="text/javascript">
+alert("Venta Concretada por $ <%= @costototal%>, se aplica un descuento de <%=@specialDesc%>% al cliente. ¡Felicidades! obtubiste una ganancia de $<%= @gan %>");
+  window.location.href="./ventas"
+</script>
+
+
+<%end%>
+<%end%>
